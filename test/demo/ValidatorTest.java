@@ -7,7 +7,7 @@ import static org.junit.jupiter.api.Assertions.*;
 class ValidatorTest {
 
   @Test
-  public void testEvenNumber() {
+  public void test_IsEven_With_Even_Number() {
     //arrange
     Validator validator = new Validator();
 
@@ -20,7 +20,7 @@ class ValidatorTest {
   }
 
   @Test
-  public void testOddNumber() {
+  public void test_IsEven_With_Odd_Number() {
     //arrange
     Validator validator = new Validator();
 
