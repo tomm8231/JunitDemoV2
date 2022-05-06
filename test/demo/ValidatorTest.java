@@ -7,7 +7,7 @@ import static org.junit.jupiter.api.Assertions.*;
 class ValidatorTest {
 
   @Test
-  public void isEven() {
+  public void testEvenNumber() {
     //arrange
     Validator validator = new Validator();
 
@@ -16,6 +16,19 @@ class ValidatorTest {
 
     //assert
     assertTrue(actual);
+
+  }
+
+  @Test
+  public void testOddNumber() {
+    //arrange
+    Validator validator = new Validator();
+
+    // act
+    boolean actual = validator.isEven(7);
+
+    //assert
+    assertFalse(actual);
 
   }
 
